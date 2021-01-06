@@ -6,6 +6,7 @@ Tested on...
 
  * RHEL 6
  * RHEL 7
+ * RHEL 8
  * Debian 9
 
 ## Example usage
