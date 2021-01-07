@@ -8,7 +8,7 @@ class certificate_distribution::install inherits certificate_distribution {
   # links that resolve to consolidated and dynamically updated files below the /etc/pki/ca-trust/extracted directory hierarchy.
   -> certificate_distribution::certificate {
     $::certificate_distribution::certificate_list:
-      source => $::certificate_distribution::source
+      content => $::certificate_distribution::content
   }
 
   if $facts['os']['name'] == 'Redhat' or $facts['os']['name'] == 'CentOS' and $facts['os']['release']['major'] != '7' {

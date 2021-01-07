@@ -8,8 +8,8 @@
 # source is the puppet source path of the files to be deployed. Defaults to: 
 class certificate_distribution (
   Array  $certificate_list = $certificate_distribution::params::certificate_list,
-  String $source           = $certificate_distribution::params::source,
   String $certificate_dir  = $certificate_distribution::params::certificate_dir,
+  String $content          = $certificate_distribution::params::content,
 ) inherits
 certificate_distribution::params {
   class { 'certificate_distribution::install': }

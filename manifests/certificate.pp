@@ -2,11 +2,18 @@
 #
 # Used to deploy a certificate, should not be called directly
 #
-define certificate_distribution::certificate (String $source) {
-  file { "certificate ${name}":
+define certificate_distribution::certificate (
+	String $source = '', 
+	String $content = '', 
+	String $type = 'content'
+ ) {
+
+	file { "certificate ${name}":
     ensure => file,
     path   => "${certificate_distribution::certificate_dir}${name}",
-    source => "${source}${name}",
+    content => "${content}",
     notify => Exec['update ca-trust'],
-  }
+	}
+	
+	
 }

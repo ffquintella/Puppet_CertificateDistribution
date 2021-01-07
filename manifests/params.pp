@@ -3,7 +3,7 @@
 # Defaults variables
 class certificate_distribution::params {
   $certificate_list = ['test.cacert.pem']
-  $source = 'puppet:///modules/certificate_distribution/'
+  $content = '###CA###'
 
   case $facts['os']['name'] {
     'RedHat', 'CentOS', 'OracleLinux': {

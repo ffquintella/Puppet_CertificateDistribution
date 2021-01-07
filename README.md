@@ -31,7 +31,7 @@ Note that for RedHat family the file extension should be '.pem':
 ```
 class {'certificate_distribution':
   certificate_list => ['cachain.pem'],
-  source           => 'puppet:///modules/profile/certificates/'
+  content           => '###CA###'
 }
 ```
 
@@ -40,6 +40,6 @@ For Debian family the file extension should be '.crt'
 ```
 class {'certificate_distribution':
   certificate_list => ['cachain.crt'],
-  source           => 'puppet:///modules/profile/certificates/'
+  content           => '###CA###'
 }
 ```
