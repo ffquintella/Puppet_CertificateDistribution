@@ -1,6 +1,6 @@
 {
   "name": "ffquintella-certificate_distribution",
-  "version": "1.0.7",
+  "version": "1.1.1",
   "author": "ffquintella",
   "summary": "Distibuting CA certficates",
   "license": "GPL-3.0",
@@ -12,8 +12,24 @@
   ],
   "operatingsystem_support": [
     {
+      "operatingsystem": "Rocky",
+      "operatingsystemrelease": [
+        "9",
+        "8",
+        "7",
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "Fedora",
+      "operatingsystemrelease": [
+        "37"
+      ]
+    },
+    {
       "operatingsystem": "OracleLinux",
       "operatingsystemrelease": [
+        "9",
         "8",
         "7",
         "6"
@@ -22,6 +38,7 @@
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
+        "9",
         "8",
         "7",
         "6"
@@ -30,6 +47,7 @@
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
+        "9",
         "8",
         "7",
         "6"
@@ -69,7 +87,7 @@
     "certificate"
   ],
   "description": "Distributing CA certficates",
-  "pdk-version": "1.11.1",
-  "template-url": "pdk-default#1.11.1",
-  "template-ref": "1.11.1-0-g2ff8c24"
+  "pdk-version": "2.5.0",
+  "template-url": "pdk-default#2.5.0",
+  "template-ref": "tags/2.5.0-0-g369d483"
 }

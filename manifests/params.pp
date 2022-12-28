@@ -6,7 +6,7 @@ class certificate_distribution::params {
   $content = '###CA###'
 
   case $facts['os']['name'] {
-    'RedHat', 'CentOS', 'OracleLinux': {
+    'RedHat', 'CentOS', 'OracleLinux', 'Rocky', 'Fedora': {
       $certificate_dir = '/etc/pki/ca-trust/source/anchors/'
       $trust_command = 'update-ca-trust extract'
     }
