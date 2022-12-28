@@ -7,7 +7,10 @@ Tested on...
  * RHEL 6
  * RHEL 7
  * RHEL 8
+ * RHEL 9
  * Debian 9
+
+The module also works on Oracle Linux, Rocky Linux and Fedora
 
 ## Example usage
 
